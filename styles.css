@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--primary-color);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: white;
+    height: 200vh;
+}
+
+:root {
+    --background-color: #000;
+    --primary-color: #68B984; 
+    --secondary-color: #d2d3d3;
+    --secondary-background-color: #555759;
+    --backup: #212121;
+}
+
+/* Start of main page */
+
+.main-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    background-color: var(--background-color);
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+/* Start of Navbar */
+
+nav {
+    width: 400px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+span {
+    color: var(--primary-color);
+}
+/* End of Navbar */
+
+/* End of Main page */
+
+/* Start of Header */
+
+header {
+    display: flex;
+    position: relative;
+    height: 86.5vh;
+    align-items: center;
+    /* background-color: var(--background-color); */
+    margin-top: 100px;
+}
+
+.introduction-container {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    letter-spacing: 2px;
+}
+
+/* #dave {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: type 2s steps(20) 1s forwards,
+    blink 0.5s steps(1) infinite;
+}
+
+@keyframes type {
+    to {
+        width: 21ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #000;
+    }
+
+    to {
+        border: transparent;
+    }
+} */
+
+
+#hello-text {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+#job-title {
+    font-size: 1.3rem;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+.profile-container {
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+    
+}
+
+.profile-container img {
+    height: 80vh;
+    animation: 3s alternate fades;
+}
+
+@keyframes fades {
+    from {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+
+    to {
+        opacity: 2;
+        
+    }
+}
+
+.social-med {
+    position: absolute;
+    left: 200px;
+    bottom: 30px;
+    gap: 20px;
+}
+
+.social-med a {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 10px;
+    
+}
+
+/* End of Header */
+
+/* Start of About */
+
+.about-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 90vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--backup);
+    position: relative;
+    justify-content: space-evenly;
+    box-shadow: rgb(50, 174, 116) 0px 20px 30px -10px;
+}
+
+.pic-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 1px solid var(--primary-color);
+    margin-left: 20px;;
+}
+
+#about-picture {
+    height: 498px;
+    width: 398px;
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    
+}
+
+.about-me {
+    width: 500px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: #bfbfbf;
+}
+
+#hello {
+    /* float: left; */
+    font-size: 50px;
+}
+
+.abt-title {
+    position: absolute;
+    top:80px;
+    right: 230px;
+}
+
+.abt-title h2 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/* experiment */
+
+a:hover {
+    transform: scale(2);
+    transition-duration: 1s;
+}
+
+li:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+li:first-child {
+    border-bottom: 1px solid #68B984;
+}
+
+/* End of About */
+
+/* Start of Skill Section */
+.skill-section { 
+    min-height: 100vh;
+}
+
+.skill-section h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+#skill-h1 {
+    text-shadow: 20px 20px 10px rgba(195, 195, 195, 0.3);
+}
+
+
+.skill-area {
+    width: 600px;
+    height: 550px;
+    border: 5px solid whitesmoke;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 35px;
+    background-color: #68B984;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px rgba(195, 195, 195, 0.5);
+}
+
+.skill-bar-bg {
+    background: white;
+    height: 30px;
+    border: 1px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.skill-bar {
+    position: absolute;
+    height: 30px;
+    border-radius: 15px;
+    text-align: right;
+    /* display: flex;
+    align-items: center;
+    text-align: right; */
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.skill-bar span {
+    color: red;
+    width: 99.9%;
+}
+
+.tanga {
+    width: 99.9%;
+    background-color: coral;
+    animation: 5s tanga;
+}
+
+.css {
+    width: 70%;
+    background-color: #68B984;
+    animation: 5s css;
+}
+
+.html {
+    width: 90%;
+    background-color: blue;
+    animation: 5s html;
+}
+
+.js {
+    width: 10%;
+    background-color: black;
+    animation: 5s js;
+}
+
+@keyframes tanga {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 99.9%;
+    } 
+}
+
+@keyframes html {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    } 
+}
+
+@keyframes css {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    } 
+}
+
+@keyframes js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10%;
+    } 
+}
+
+/* End of Skill Section */
+
+/* Start of Project Section */
+
+.project-section {
+    /* background-image: url(/2281139.gif); */
+}
+.project-area {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 20px;
+}
+
+.prj-pic {
+    height: 400px;
+    width: 400px;
+}
+/* End of Project Section */
+
+
+.bg-img {
+    background-image: url(wp2.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter:grayscale(100%) blur(5px);
+
+}
+
+.dave-cont {
+    display: inline-block;
+}
+
+.dave-cont span {
+    letter-spacing: 3px;
+    border-right: 3px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 1s steps(4),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+
+/* trial */
+
+i {
+    color: black;
+    font-size: 5rem;
+}
+
+.skill-container {
+    height: 100vh;
+    padding: 100px 50px 100px 50px;
+    
+}
+
+.skill-container h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+#wrapper {
+    background-color: #68B984;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#wrapper h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+#wrapper h1 span {
+    color: #000;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%;
+    height: 85%; */
+    
+}
+
+.card {
+    border: 3px solid transparent;
+    background-color: #fff;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
+    justify-content: center;
+}
+
+.card p {
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* certi */
+
+.certification-area {
+    height: 100vh;
+    padding: 100px 50px 50px 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.certi-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.certi img {
+    height: 400px;
+    width: 500px;
+    margin: 20px;
+}
+
+/* Projects */
+
+.projects {
+    height: 200vh;
+    margin: 50px;
+}
+
+
+.prj-area {
+    /* height: 100vh;
+    width: 100%; */
+    
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    /* grid-template-rows: 1fr 1fr; */
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    gap: 50px;
+}
+
+.prj-title h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.prj-card {
+    /* height: 400px;
+    width: 400px; */
+    border: 3px solid transparent ;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:#68B984;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 5px, rgba(255, 255, 255, 0.3) 0px 10px, rgba(255, 255, 255, 0.2) 0px 15px, rgba(255, 255, 255, 0.1) 0px 20px, rgba(255, 255, 255, 0.05) 0px 25px;
+}
+
+.prj-img{
+    width: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* img {
+    filter:opacity(0.5) grayscale(5)
+} */
+
+footer {
+    
+}
